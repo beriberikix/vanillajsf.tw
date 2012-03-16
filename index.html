@@ -1,7 +1,66 @@
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Quicksand|Chango' rel='stylesheet' type='text/css'>
 	<title>Vanilla JavaScript FTW</title>
 </head>
 <body>
+<div class="container">
+  <header>
+  	<h1 class="logo">Vanilla JavaScript<span>FTW</span></h1>
+  	<p>JavaScript has gotten waaay better. Vanilla JavaScript is lightweight & task-oriented. For the win.</p>
+  </header>
+  <div role="main">
+  	<h2>Selectors</h2>
+  	<div class="code-list">
+	  	<pre>var node = document.querySelector("div");</pre>
+	  	<pre>var node = document.querySelector("#id");</pre>
+	  	<pre>var node = document.querySelector(".class");</pre>
+	  	<pre>var lis = document.querySelectorAll('#container li');</pre>
+	  	<pre>var large-even = document.querySelectorAll("#large:nth-child(even)");</pre>
+	</div>
+
+ 	<h2>Events</h2>
+  	<div class="code-list">
+<pre>
+[].forEach.call(document.querySelectorAll("a"), function(el) {
+  el.addEventListener("click", function() {
+    // code&hellip;
+  });
+});
+</pre>
+<pre>
+[].forEach.call(document.querySelectorAll("a"), function(el) {
+  el.removeEventListener("click", function() {
+    // code&hellip;
+  });
+});
+</pre>
+	</div>
+
+  	<h2>CSS</h2>
+  	<div class="code-list">
+	  	<pre>container.classList.add('wrap');</pre>
+		<pre>container.classList.remove('wrap');</pre>
+		<pre>container.classList.toggle('wrap');</pre>
+	</div>
+  </div>
+  <footer>
+  	<span>Put together by <a href="http://wwww.jonathanberi.com">Jonathan Beri</a></span>
+  </footer>
+ </div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30081566-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 </body>
 </html>
