@@ -13,15 +13,20 @@
   <div role="main">
   	<h2>Selectors</h2>
   	<div class="code-list">
-	  	<pre>var node = document.querySelector("div");</pre>
-	  	<pre>var node = document.querySelector("#id");</pre>
-	  	<pre>var node = document.querySelector(".class");</pre>
-	  	<pre>var lis = document.querySelectorAll('#container li');</pre>
-	  	<pre>var large-even = document.querySelectorAll("#large:nth-child(even)");</pre>
+	  	<pre>document.querySelector("div");</pre>
+	  	<pre>document.querySelector("#id");</pre>
+	  	<pre>document.querySelector(".class");</pre>
+	  	<pre>document.querySelectorAll('#container li');</pre>
+	  	<pre>document.querySelectorAll("#large:nth-child(even)");</pre>
 	  	<pre>if ( e.target.matchesSelector('ul a') ) ? true : false;</pre>
-	</div>
+	 </div>
 
- 	<h2>Events</h2>
+    <h2>Attributes</h2>
+    <div class="code-list">
+      <pre>document.querySelector("#id").getAttribute('data-fruit');</pre>
+    </div>
+
+   	<h2>Events</h2>
   	<div class="code-list">
 <pre>
 [].forEach.call(document.querySelectorAll("a"), function(el) {
