@@ -1,69 +1,95 @@
+<!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="./css/style.css">
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/prettify.css">
 	<link href='http://fonts.googleapis.com/css?family=Quicksand|Chango' rel='stylesheet' type='text/css'>
   <link rel="shortcut icon" type="text/css" href="favicon.ico">
 	<title>Vanilla JavaScript FTW</title>
+  <script src="./js/prettify.js"></script>
 </head>
-<body>
-<div class="container">
+<body onLoad="prettyPrint()">
   <header>
-  	<h1 class="logo">Vanilla JavaScript<span>FTW</span></h1>
-  	<p>JavaScript has gotten waaay better. Vanilla JavaScript is lightweight & task-oriented. For the win.</p>
+  	<a href="http://vanillajsf.tw/" alt="VanillaJSFTW" title="Vanilla JavaScript FTW"><h1 class="logo"><img src="./css/images/logo.png" alt="VanillaJSLogo" title="Vanilla Js FTW" /> Vanilla JavaScript<span>FTW</span></h1></a>
+    <span>
+        <a href="https://plus.google.com/100166606583546284443/posts" target="blank" alt="Google+" title="Google+"><img src="./css/images/gplus.png" /></a>
+        <a href="https://github.com/beriberikix/vanillajsf.tw" target="blank" alt="GitHub" title="GitHub"><img src="./css/images/github.png" /></a>
+    </span>
   </header>
+<div class="container">
+  	<p>JavaScript has gotten waaay better. Vanilla JavaScript is lightweight &amp; task-oriented. For the win.</p>
 
   <div role="main">
   	<h2>Selectors</h2>
-  	<div class="code-list">
-	  	<pre>document.querySelector("div");</pre>
-	  	<pre>document.querySelector("#id");</pre>
-	  	<pre>document.querySelector(".class");</pre>
-	  	<pre>document.querySelectorAll('#container li');</pre>
-	  	<pre>document.querySelectorAll("#large:nth-child(even)");</pre>
-	  	<pre>if ( e.target.matchesSelector('ul a') ) ? true : false;</pre>
-	 </div>
+  	<pre class="prettyprint">
+	  	<code>
+        document.querySelector("div");
+        document.querySelector("#id");
+        document.querySelector(".class");
+        document.querySelectorAll('#container li');
+        document.querySelectorAll("#large:nth-child(even)");
+        if ( e.target.matchesSelector('ul a') ) ? true : false;
+      </code>
+	 </pre>
 
     <h2>CSS</h2>
-    <div class="code-list">
-      <pre>document.querySelector('#box').classList.add('wrap');</pre>
-      <pre>document.querySelector('#box').classList.remove('wrap');</pre>
-      <pre>document.querySelector('#box').classList.toggle('wrap');</pre>
-    </div>
+    <pre class="prettyprint">
+      <code>
+        document.querySelector('#box').classList.add('wrap');
+        document.querySelector('#box').classList.remove('wrap');
+        document.querySelector('#box').classList.toggle('wrap');
+      </code>
+    </pre>
 
    	<h2>Events</h2>
-    <div class="code-list">
-<pre>
-document.addEventListener("DOMContentLoaded", function() {
-  // code&hellip;
-});
-</pre>
-<pre>
-[].forEach.call(document.querySelectorAll("a"), function(el) {
-  el.addEventListener("click", function() {
-    // code&hellip;
-  });
-});
-</pre>
-<pre>
-[].forEach.call(document.querySelectorAll("a"), function(el) {
-  el.removeEventListener("click", function() {
-    // code&hellip;
-  });
-});
-</pre>
-    </div>
+    <pre class="prettyprint">
+      <code>
+      document.addEventListener("DOMContentLoaded", function() {
+        // code&hellip; &nbsp;
+      });
+      
+      [].forEach.call(document.querySelectorAll("a"), function(el) {
+        el.addEventListener("click", function() {
+          // code&hellip;
+        });
+      });
+      
+      [].forEach.call(document.querySelectorAll("a"), function(el) {
+        el.removeEventListener("click", function() {
+          // code&hellip;
+        });
+      });
+      </code>
+    </pre>
 
     <h2>Attributes</h2>
-    <div class="code-list">
-      <pre>document.querySelector("#id").getAttribute('data-fruit');</pre>
-      <pre>document.querySelector('input').getAttribute('name');</pre>
-    </div>
+    <pre class="prettyprint">
+      <code>
+        document.querySelector("#id").getAttribute('data-fruit');
+        document.querySelector('input').getAttribute('name');
+      </code>
+    </pre>
   </div><!--end main -->
 
-  <footer>
-  	<span>Put together by <a href="http://jonathanberi.com">Jonathan Beri</a></span>
-  </footer>
 </div><!-- end container -->
+  <footer>
+      <h3>Contact</h3>
+      <h3>More Vanilla JS- FTW</h3>
+    <div>
+      <ul>
+        <li><a href="https://plus.google.com/100166606583546284443/posts" target="blank" alt="Google+" title="Google+"><img src="./css/images/gplus.png" /> Follow Us On Google+</a></li> 
+        <li><a href="https://github.com/beriberikix/vanillajsf.tw" target="blank" alt="GitHub" title="GitHub"><img src="./css/images/github.png" /> Fork Us On GitHub</a></li> 
+        <li>Put together by <a href="http://jonathanberi.com">Jonathan Beri</a></li> 
+    </div>
+    <div>
+      <ul class="more">
+        <li><a href="http://net.tutsplus.com/tutorials/javascript-ajax/from-jquery-to-javascript-a-reference/" target="blank" title="From jQuery to JavaScript: A Reference+">From jQuery to JavaScript: A Reference</a></li> 
+        <li><a href="http://sharedfil.es/js-48hIfQE4XK.html" target="blank" title="Vanilla JS FTW: jQuery vs JavaScript">Vanilla JS FTW: jQuery vs JavaScript</a></li> 
+        <li><a href="http://agentcooper.github.com/js-ruby-comparison/" target="blank" title="Ruby vs JavaScript: A Comparison">Ruby vs JavaScript: A Comparison</a></li> 
+        <li><a href="http://blog.sethladd.com/2012/01/vanilla-dart-ftw.html" target="blank" title="Comparing Dart, jQuery, CoffeeScript, CoffeeScript+jQuery, and JavaScript">Comparing Dart, jQuery, CoffeeScript, CoffeeScript+jQuery, and JavaScript</a></li> 
+    </div>
+  </footer>
 <script type="text/javascript">
 
   var _gaq = _gaq || [];

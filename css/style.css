@@ -218,42 +218,139 @@ td { vertical-align: top; }
    Author:
    ========================================================================== */
 html{
-  padding: 30px 10px;
-  color: #737373;
+  color: #323330;
+  padding:0;
+  margin:0;
 }
 
 body{
-  max-width: 760px;
-  min-width: 550px;
-  margin: 0 auto;
+  background:#323330;
+  width:100%;
+  padding:0;
+  margin:0;
+}
+
+header{
+  width:100%;
+  background:#FFFFFF;
+  display:inline-block;
+}
+
+h2{
+  color:#FFFFFF;
+}
+
+code{
+  border: 1px solid #EEEEEE;
+  padding: 20px;
+  border-radius: 1em;
+  display:block;
+  background:#FFFFFF;
+}
+
+footer{
+  background:#F0DB4F;
+  width:100%;
+  margin-top:1.5em;
+}
+
+ul{
+  list-style:none;
+  display:inline-block;
+}
+
+a{
+  color:#323330;
+  text-decoration:none;
+}
+
+a:hover,a:visited:hover{
+  color:#01B0EC;
+}
+
+a:visited{
+  color:#323330;
+}
+
+footer > div{
+  width:43%;
+  padding:0% 3%;
+  margin:1.5% 0;
+  display:inline-block;
+}
+
+footer > div:last-child{
+  border-left:0.1em solid #C1A727;
+}
+
+footer > div ul{
+  width:100%;
+  margin:0;
+}
+
+footer > div ul li{
+  margin:0.75em 0;
+}
+
+footer img{
+  margin-right:3%;
+}
+
+footer > h3{
+  width:44%;
+  padding:0;
+  text-align:center;
+  margin:1.5em 0 0.5em 0;
+  display:inline-block;
+}
+
+header > span{
+  display:inline-block;
+  margin-left:20%;
+  width:10%;
+  min-width:90px;
+}
+
+header > span a{
+  margin:0 4%;
+}
+
+.more{
+  list-style:circle;
 }
 
 .logo{
   font-family: 'Quicksand', sans-serif;
-  color: #737373;
+  color: #323330;
+  margin:0.3em 5% 0.3em 11%;
+  display:inline-block;
+  width:50%;
 }
 
 .logo > span{
   font-family: 'Chango', cursive;
-  color: #BBB;
 }
 
-.code-list{
-  border: 1px solid #B3B3B3;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: inset 0 0 10px #000000;
+.logo img{
+  width:12%;
+  min-width:50px;
+  height:auto;
 }
 
-footer{
-  padding-top: 20px;
+.container{
+  width:90%;
+  max-width:780px;
+  margin:auto;
 }
 
+.container p{
+  color:#FFFFFF;
+}
 
-
-
-
-
+pre{
+  padding:0!important;
+  border:none!important;
+}
 
 
 /* ==|== media queries ======================================================
