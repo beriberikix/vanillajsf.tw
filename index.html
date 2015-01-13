@@ -49,16 +49,16 @@
         // code&hellip; &nbsp;
       });
       
+      function clickHandler() {
+        // code&hellip;
+      }
+      
       [].forEach.call(document.querySelectorAll("a"), function(el) {
-        el.addEventListener("click", function() {
-          // code&hellip;
-        });
+        el.addEventListener("click", clickHandler);
       });
       
       [].forEach.call(document.querySelectorAll("a"), function(el) {
-        el.removeEventListener("click", function() {
-          // code&hellip;
-        });
+        el.removeEventListener("click", clickHandler);
       });
       </code>
     </pre>
